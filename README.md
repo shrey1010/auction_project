@@ -25,23 +25,24 @@ This is a Django-based REST API for managing user accounts and auctions.
 git clone https://github.com/shrey1010/auction_project.git
 ```python
 cd django-auction-api
+```
 
 2. Install dependencies:
 ```python
 pip install -r requirements.txt
-
+```
 3. Apply database migrations:
 ```python
 python manage.py migrate
-
+```
 4. Create a superuser for admin access:
 ```python
 python manage.py createsuperuser
-
+```
 5. Run the development server:
 ```python
 python manage.py runserver
-
+```
 The API will be accessible at `http://127.0.0.1:8000`.
 
 ## API Endpoints
@@ -87,17 +88,17 @@ This project is Dockerized for easy deployment. Follow the provided Docker instr
 Open a terminal and navigate to the directory where your Dockerfile is located. Then run:
 ```python
 docker build -t django-auction-api .
-
+```
 Start the Docker container
 
 If you're using Docker Compose, run:
 ```pytho
 docker-compose up
-
+```
 If you're not using Docker Compose, run:
-```pytho
+```python
 docker run -p 8000:8000 django-auction-api
-
+```
 Your Django API should now be running inside a Docker container.
 
 ## Contributing
